@@ -1,0 +1,475 @@
+-- Gui to Lua
+-- Version: 3.2
+ 
+-- Instances:
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local EXE = Instance.new("TextButton")
+local CLEAR = Instance.new("TextButton")
+local Scripts = Instance.new("Frame")
+local IY = Instance.new("TextButton")
+local c00lkiddhint = Instance.new("TextButton")
+local remove = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local INJECT = Instance.new("TextButton")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+ 
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0979591832, 0, 0.0770751014, 0)
+Main.Size = UDim2.new(0, 771, 0, 395)
+Main.Active = true
+Main.Draggable = true
+ 
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0354938284, 0, 0.00759493653, 0)
+Title.Size = UDim2.new(0, 64, 0, 12)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Ligma"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 14.000
+ 
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0169753041, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 23, 0, 21)
+ImageLabel.Image = "rbxassetid://7256706293"
+ 
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.0169753917, 0, 0.0784810111, 0)
+TextBox.Size = UDim2.new(0, 477, 0, 341)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+ 
+EXE.Name = "EXE"
+EXE.Parent = Main
+EXE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EXE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EXE.Position = UDim2.new(0.653132379, 0, 0.0784810111, 0)
+EXE.Size = UDim2.new(0, 105, 0, 106)
+EXE.Font = Enum.Font.SourceSans
+EXE.Text = "Execute"
+EXE.TextColor3 = Color3.fromRGB(0, 0, 0)
+EXE.TextSize = 14.000
+EXE.TextWrapped = true
+ 
+CLEAR.Name = "CLEAR"
+CLEAR.Parent = Main
+CLEAR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CLEAR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CLEAR.Position = UDim2.new(0.653211355, 0, 0.369620264, 0)
+CLEAR.Size = UDim2.new(0, 104, 0, 108)
+CLEAR.Font = Enum.Font.SourceSans
+CLEAR.Text = "Clear"
+CLEAR.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLEAR.TextSize = 14.000
+ 
+Scripts.Name = "Scripts"
+Scripts.Parent = Main
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.Position = UDim2.new(0.804150462, 0, 0.0784810111, 0)
+Scripts.Size = UDim2.new(0, 136, 0, 341)
+ 
+IY.Name = "IY"
+IY.Parent = Scripts
+IY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IY.Size = UDim2.new(0, 136, 0, 25)
+IY.Font = Enum.Font.SourceSans
+IY.Text = "Inf yield"
+IY.TextColor3 = Color3.fromRGB(0, 0, 0)
+IY.TextSize = 14.000
+ 
+c00lkiddhint.Name = "c00lkiddhint"
+c00lkiddhint.Parent = Scripts
+c00lkiddhint.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c00lkiddhint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+c00lkiddhint.Position = UDim2.new(0, 0, 0.0733137801, 0)
+c00lkiddhint.Size = UDim2.new(0, 136, 0, 25)
+c00lkiddhint.Font = Enum.Font.SourceSans
+c00lkiddhint.Text = "c00lkidd Hint"
+c00lkiddhint.TextColor3 = Color3.fromRGB(0, 0, 0)
+c00lkiddhint.TextSize = 14.000
+ 
+remove.Name = "remove"
+remove.Parent = Main
+remove.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remove.BorderColor3 = Color3.fromRGB(0, 0, 0)
+remove.BorderSizePixel = 0
+remove.Position = UDim2.new(0.963683546, 0, 0.00759493653, 0)
+remove.Size = UDim2.new(0, 13, 0, 18)
+remove.Font = Enum.Font.SourceSans
+remove.Text = "x"
+remove.TextColor3 = Color3.fromRGB(0, 0, 0)
+remove.TextScaled = true
+remove.TextSize = 14.000
+remove.TextWrapped = true
+ 
+close.Name = "close"
+close.Parent = Main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.915693879, 0, 0.0101265823, 0)
+close.Size = UDim2.new(0, 28, 0, 17)
+close.Font = Enum.Font.SourceSans
+close.Text = "-"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+ 
+INJECT.Name = "INJECT"
+INJECT.Parent = Main
+INJECT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INJECT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+INJECT.Position = UDim2.new(0.65239948, 0, 0.673417747, 0)
+INJECT.Size = UDim2.new(0, 104, 0, 105)
+INJECT.Font = Enum.Font.SourceSans
+INJECT.Text = "Inject"
+INJECT.TextColor3 = Color3.fromRGB(0, 0, 0)
+INJECT.TextSize = 14.000
+ 
+-- Scripts:
+ 
+local function WEBH_fake_script() -- EXE.LocalScript 
+	local script = Instance.new('LocalScript', EXE)
+ 
+	local Textbox = script.Parent.Parent.TextBox
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		loadstring(Textbox.Text)()
+	end)
+end
+coroutine.wrap(WEBH_fake_script)()
+local function ZUNZ_fake_script() -- CLEAR.LocalScript 
+	local script = Instance.new('LocalScript', CLEAR)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(ZUNZ_fake_script)()
+local function ATVCAT_fake_script() -- IY.LocalScript 
+	local script = Instance.new('LocalScript', IY)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(ATVCAT_fake_script)()
+local function SNSF_fake_script() -- c00lkiddhint.LocalScript 
+	local script = Instance.new('LocalScript', c00lkiddhint)
+ 
+	local H = Instance.new("Hint")
+	script.Parent.MouseButton1Click:Connect(function()
+		H.Text = "Team c00lkidd join today!"
+		H.Parent = game.Workspace
+	end)
+end
+coroutine.wrap(SNSF_fake_script)()
+local function VBPRIK_fake_script() -- remove.LocalScript 
+	local script = Instance.new('LocalScript', remove)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		ScreenGui:Destroy()
+	end)
+end
+coroutine.wrap(VBPRIK_fake_script)()
+local function YPOYT_fake_script() -- INJECT.LocalScript 
+	local script = Instance.new('LocalScript', INJECT)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		-- // GUI TO LUA \\ --
+ 
+		-- // INSTANCES: 9 | SCRIPTS: 2 | MODULES: 0 \\ --
+ 
+		local UI = {}
+ 
+		-- // StarterGui.Stigma \\ --
+		UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+		UI["1"]["Name"] = [[Stigma]]
+		UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+		UI["1"]["ResetOnSpawn"] = false
+ 
+		-- // StarterGui.Stigma.datag2 \\ --
+		UI["2"] = Instance.new("GuiMain", UI["1"])
+		UI["2"]["DisplayOrder"] = 999
+		UI["2"]["ResetOnSpawn"] = false
+		UI["2"]["Name"] = [[datag2]]
+ 
+		-- // StarterGui.Stigma.datag2.Main \\ --
+		UI["3"] = Instance.new("ImageLabel", UI["2"])
+		UI["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+		UI["3"]["Image"] = [[rbxassetid://7102117818]]
+		UI["3"]["Size"] = UDim2.new(0, 130, 0, 130)
+		UI["3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
+		UI["3"]["BackgroundTransparency"] = 1
+		UI["3"]["Name"] = [[Main]]
+		UI["3"]["Position"] = UDim2.new(0.5, -2000, 0.5, -50)
+ 
+		-- // StarterGui.Stigma.datag2.Main.Orbit \\ --
+		UI["4"] = Instance.new("ImageLabel", UI["3"])
+		UI["4"]["ZIndex"] = 2
+		UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+		UI["4"]["Image"] = [[http://www.roblox.com/asset/?id=7101990169]]
+		UI["4"]["Size"] = UDim2.new(0.17, 0, 0.17, 0)
+		UI["4"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
+		UI["4"]["BackgroundTransparency"] = 1
+		UI["4"]["Name"] = [[Orbit]]
+ 
+		-- // StarterGui.Stigma.datag2.Main.Ring \\ --
+		UI["5"] = Instance.new("ImageLabel", UI["3"])
+		UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+		UI["5"]["Image"] = [[rbxassetid://7102118272]]
+		UI["5"]["Size"] = UDim2.new(1, 0, 1, 0)
+		UI["5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
+		UI["5"]["BackgroundTransparency"] = 1
+		UI["5"]["Name"] = [[Ring]]
+ 
+		-- // StarterGui.Stigma.datag2.Main.Main2 \\ --
+		UI["6"] = Instance.new("ImageLabel", UI["3"])
+		UI["6"]["ZIndex"] = 3
+		UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+		UI["6"]["ImageTransparency"] = 1
+		UI["6"]["Image"] = [[rbxassetid://7102276469]]
+		UI["6"]["Size"] = UDim2.new(1, 0, 1, 0)
+		UI["6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54)
+		UI["6"]["BackgroundTransparency"] = 1
+		UI["6"]["Name"] = [[Main2]]
+ 
+		-- // StarterGui.Stigma.datag2.olleH \\ --
+		UI["7"] = Instance.new("BindableEvent", UI["2"])
+		UI["7"]["Name"] = [[olleH]]
+ 
+		-- // StarterGui.Stigma.datag2.Orbi \\ --
+		UI["8"] = Instance.new("LocalScript", UI["2"])
+		UI["8"]["Name"] = [[Orbi]]
+ 
+		-- // StarterGui.Stigma.LocalScript \\ --
+		UI["9"] = Instance.new("LocalScript", UI["1"])
+ 
+ 
+		-- // StarterGui.Stigma.datag2.Orbi \\ --
+		local function SCRIPT_8()
+			local script = UI["8"]
+			local Main = script.Parent.Main
+			local Main2 = Main.Main2
+			local Orbit = Main.Orbit
+			local Ring = Main.Ring
+ 
+			--Notice: This relies on the fact it will be a perfectly round icon.
+			local RS = game:GetService("RunService").Heartbeat
+			local Tween = game:GetService("TweenService")
+			local WaitTime = 0.25
+			local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+			local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
+			local hk = Main.AbsoluteSize.X/2
+			local MainSize = Main.AbsoluteSize.X
+			local ls = Orbit.AbsoluteSize.X/2
+			local r = hk
+			local theta = 0
+			local step = (2*math.pi)/450
+			local rotvel = 0.35
+			local StepInstance = Instance.new("NumberValue")
+			local RotInstance = Instance.new("NumberValue")
+			StepInstance.Changed:Connect(function()
+				step = StepInstance.Value
+			end)
+			RotInstance.Changed:Connect(function()
+				rotvel = RotInstance.Value
+			end)
+ 
+			local Modes = {
+				--Main Image--
+				Tween:Create(Main2,LoadInfo,{ImageTransparency=0.5}), --Indicates script loading
+				Tween:Create(Main2,LoadInfo,{ImageTransparency=1}),   --Indicated script completed
+				Tween:Create(Main2,FlashInfo,{ImageTransparency=0}),   --Pulse effect for completed
+				--Step Tween--
+				Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/180}),
+				Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/450}),
+				--Rot Tween--
+				Tween:Create(RotInstance,LoadInfo,{Value=1}),
+				Tween:Create(RotInstance,LoadInfo,{Value=0.35}),
+			}
+			Modes[2].Completed:Connect(function()
+				Modes[3]:Play()
+			end)
+ 
+			local function ScriptLoading()
+				Modes[6]:Play()
+				Modes[4]:Play()
+				Modes[1]:Play()
+			end
+ 
+			local function ScriptDone()
+				Modes[2]:Play()
+				Modes[5]:Play()
+				Modes[7]:Play()
+			end
+			spawn(function()
+				local deb = false
+				local hi = script.Parent.Main
+				hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
+				wait'3'
+				hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
+				game:GetService'Players'.LocalPlayer.Chatted:Connect(function(agg)
+					pcall(function()
+						if agg == '/e hidemeh' then
+							hi.Visible = not hi.Visible
+						end
+					end)
+				end)
+			end)
+			--DEMO CODE--
+			script.Parent.olleH.Event:Connect(function(a)
+				if a then ScriptLoading() else ScriptDone() end
+			end)
+			--DEMO CODE--
+ 
+			while RS:wait() do
+				theta = theta < 360 and theta + step or 0
+				local x = (hk + r * math.cos(theta) - ls)
+				local y = (hk + r * math.sin(theta) - ls)
+				Orbit.Position = UDim2.new(x/MainSize,0,y/MainSize,0)
+				Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
+				RS:wait()
+			end
+		end
+		task.spawn(SCRIPT_8)
+		-- // StarterGui.Stigma.LocalScript \\ --
+		local function SCRIPT_9()
+			local script = UI["9"]
+			activated = false
+			wait'.3'
+			hi = nil
+			script.Parent = nil
+			script = nil
+			connections = {
+				['printconsole'] = {},
+				['loadstring'] = {},
+				['GetObjects'] = {},
+				['syntax'] = {},
+			}
+			for i,v in pairs(connections) do
+				local newanimt = Instance.new'Animation'
+				newanimt.AnimationId = i..string.rep('4592', 100)
+				local cloney = newanimt:Clone()
+				connections[i].ready = false
+				connections[i].anim = newanimt
+				connections[i].animdupe = cloney
+				cloney.AnimationId = string.reverse(newanimt.AnimationId)
+				spawn(function()
+					cloney.Changed:wait()
+					newanimt.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+					connections[i].ready = true
+				end)
+			end
+			game:GetService'RunService'.RenderStepped:Connect(function()
+				for i,v in pairs(connections) do
+					v.animdupe.AnimationId = string.reverse(v.anim.AnimationId)
+				end
+			end)
+			local lan = Instance.new('Animation'--[[, game:GetService'Players'.LocalPlayer.PlayerScripts--]])
+			--an.Parent = workspace --no
+			lan.AnimationId = string.rep('lugxdd', 999)
+			dupean = lan:Clone()
+			game:GetService'RunService'.RenderStepped:Connect(function()
+				dupean.AnimationId = string.reverse(lan.AnimationId)
+			end)
+			repeat wait'' until lan.AnimationId ~= string.rep('lugxdd', 999)
+			if lan.AnimationId:find('CEX:') then
+				lan.AnimationId = string.rep('YEAH YOU GOT IT BRO XDX', 1)
+				repeat wait'' until lan.AnimationId:find'cool cool im ready broX'
+				lan.AnimationId = ('Name: '..game:GetService'Players'.LocalPlayer.Name)
+				repeat wait'' until lan.AnimationId:find'placei' and lan.AnimationId ~= 'Name: '..game:GetService'Players'.LocalPlayer.Name
+				local gamname = game:GetService'MarketplaceService':GetProductInfo(game.PlaceId).Name..string.rep(' ', 10)
+				lan.AnimationId = gamname
+				repeat wait'' until lan.AnimationId:find'lolx' and lan.AnimationId ~= gamname
+				lan.AnimationId = string.rep('fatxdd', 999)
+				activated = true
+				pcall(function() game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack",true) end)
+			end
+			repeat wait'' until activated == true
+			function ohok()
+				if lan.AnimationId ~= string.rep('fatxdd', 999) then
+					if tonumber(lan.AnimationId) == 1 then guid.lol:Fire(true) lan.AnimationId = string.rep('fatxdd', 999) return end
+					pcall(function()
+						guid.lol:Fire(true)
+					end)
+					local animval = lan.AnimationId
+					if tostring(animval):find'<html>' then 
+						game:GetService'Players'.LocalPlayer:Kick'A web error occured! (if incorrectly kicked dm me)'
+						wait'3'
+						return
+					end
+					game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest:InvokeServer('SUP FAT MAN SCAT MAN BLACK AND WHITE AND BROWN MAN!!XZCzXC&&@#&$%&*@)#*&%(SSFD!', animval)
+					pcall(function()
+						guid.lol:Fire(false)
+					end)
+					lan.AnimationId = string.rep('fatxdd', 999)
+				end
+			end
+			--spawn(ohok)
+			dupean.Changed:Connect(ohok)
+ 
+			local newu = Instance.new('GuiMain', game:GetService'Players'.LocalPlayer:FindFirstChildOfClass'PlayerGui')
+			newu.ResetOnSpawn = false
+			newu.Name = 'Chat                        '
+			guid.Parent = newu
+			guid.Orbi.Disabled = false
+ 
+			game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest.OnClientInvoke = function(contype, datithas)
+				if connections[contype] then
+					local workin = connections[contype]
+					if workin.ready == false then
+						repeat wait'' until workin.ready == true
+					end
+					repeat wait'' until workin.anim.AnimationId == 'OKAYDOE'..string.rep('\0', 0)
+					workin.anim.AnimationId = datithas
+					workin.animdupe.Changed:wait()
+					if workin.animdupe.AnimationId == string.reverse(datithas) then
+						workin.animdupe.Changed:wait()
+					end
+					local chayd = workin.anim.AnimationId
+					workin.anim.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+					return chayd
+				end
+			end
+ 
+		end
+		task.spawn(SCRIPT_9)
+ 
+		return UI["1"], require;
+	end)
+end
+coroutine.wrap(YPOYT_fake_script)()
+ 
